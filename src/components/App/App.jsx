@@ -237,9 +237,10 @@ export default class App extends Component {
     );
 
     const spinner = loading ? <Spinner /> : null;
-    const filmList = !loading ? (
-      <FilmList pagination={pagination} sessionId={this.state.sessionId} data={this.state.data} />
-    ) : null;
+    const filmList =
+      !loading && page === '1' ? (
+        <FilmList pagination={pagination} sessionId={this.state.sessionId} data={this.state.data} />
+      ) : <FilmList  sessionId={this.state.sessionId} data={this.state.data} />;
 
     const errorMessage = error ? <AlertMessage /> : null;
     const showNoData = noData ? <NoDataMessage /> : null;

@@ -36,8 +36,8 @@ export default class FilmInfo extends Component {
   };
 
   render() {
-    const { id, name, description, posterPath, vote_average, genresId, date } = this.props;
-
+    let { id, name, description, posterPath, vote_average, genresId, date } = this.props;
+    vote_average = vote_average.toFixed(1);
     let voteClassName = 'vote-average';
     if (vote_average >= 0 && vote_average <= 3) {
       voteClassName += ' low';
