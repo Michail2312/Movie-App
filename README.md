@@ -6,4 +6,4 @@
 
 **Писал не сам, а с помощью законных (и не очень), честных (и не очень) способов, прибегая к помощи третьих лиц**
 
-[Click](https://movie-db-michail2312.vercel.app/)
+[Click](https://movie-app-flame-gamma.vercel.app/)
